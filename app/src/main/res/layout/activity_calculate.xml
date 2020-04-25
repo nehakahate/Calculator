@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Calculate">
+
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Number1"
+        android:inputType="number"
+        android:textColor="#039BE5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:hint="Number2"
+        android:inputType="number"
+        android:textColor="#1E88E5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="201dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center_horizontal"
+        android:text="Answer"
+        android:textAlignment="center"
+        android:textColor="#039BE5"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="367dp"
+        android:layout_height="240dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorAccent"
+            android:gravity="fill"
+            android:src="@drawable/rounded_corners"
+            android:text="Subtract"
+
+            android:textColor="#FBF9F9"
+            android:textSize="20sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="center_horizontal"
+
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/divide"
+
+            android:layout_marginBottom="10dp"
+            android:layout_width="103dp"
+            android:layout_height="72dp"
+            app:layout_gravity="center_horizontal"
+            android:background="@color/colorAccent"
+            android:gravity="fill"
+            android:src="@drawable/rounded_corners"
+            android:text="Divide"
+            android:textColor="#FBF9F9"
+            android:textSize="20sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/mod"
+
+
+            android:layout_width="112dp"
+            android:layout_height="72dp"
+            android:background="@color/colorAccent"
+            android:gravity="fill"
+            android:src="@drawable/rounded_corners"
+            android:text="Mod"
+            android:textColor="#FBF9F9"
+
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="center_horizontal"
+
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/clear"
+            app:layout_gravity="center_horizontal"
+
+            android:layout_width="103dp"
+            android:layout_height="72dp"
+            android:background="@color/colorAccent"
+            android:gravity="fill"
+            android:src="@drawable/rounded_corners"
+            android:text="clear"
+            android:textColor="#FBF9F9"
+            android:textSize="20sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+
+            app:layout_row="2" />
+
+
+        <Button
+            android:id="@+id/multiply"
+
+            android:layout_width="110dp"
+            android:layout_height="74dp"
+            android:background="@color/colorAccent"
+            android:gravity="fill"
+            android:src="@drawable/rounded_corners"
+            android:text="multiply"
+            android:textColor="#FBF9F9"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="center_horizontal"
+
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/add"
+            app:layout_gravity="center_horizontal"
+            android:layout_width="103dp"
+            android:layout_height="72dp"
+
+            android:background="@color/colorAccent"
+            android:gravity="fill"
+            android:src="@drawable/rounded_corners"
+            android:text="add"
+            android:textColor="#FBF9F9"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="0" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

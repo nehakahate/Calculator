@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgeCalculate">
+
+    <Button
+        android:id="@+id/buttondate"
+        android:layout_width="125dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="148dp"
+        android:background="@color/colorAccent"
+
+        android:text="Birth Date"
+        android:textColor="#EFE7E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/birthdate"
+        android:layout_width="141dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="268dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="141dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="392dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="141dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="272dp"
+        android:freezesText="true"
+        android:gravity="center_horizontal"
+        android:text="Birth date"
+        android:textAlignment="center"
+        android:textColor="#4999BF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="141dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="392dp"
+        android:freezesText="true"
+        android:gravity="center_horizontal"
+        android:text="Your age"
+        android:textAlignment="center"
+        android:textColor="#4999BF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
